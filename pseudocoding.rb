@@ -1,41 +1,24 @@
-#Create variable "store" that hold space to input info as a string
-#hit enter
-#Check if variable is empty 
-#if variable is empty then put message with all upper-case letters "HELLO, THIS IS A GROCERY STORE!"
+#Put message "HELLO, THIS IS A GROCERY STORE!"
+#Create a variable named "question" to enter a question for the store
+#Continue asking question until client say "GOODBYE" second time
 
-#Create a variable to enter a question for the store from the client as a string 
-#check if info contains any lower-case letters
-#if information is entered with ANY lower-case letters
+#check if info that held in variable named "question" contains any lower-case letters
+#if information is entered with any lower-case letters 
      #Then print out with ALL upper-case letters "I AM HAVING A HARD TIME HEARING YOU"
-#check if info that held in variable contains ALL upper-case letters 
- #Elseif information is entered in all upper-case letters
-    #Print out with all upper-case letters "NO, THIS IS NOT A PET STORE"
-    #if you enter "GOODBYE"
-    #PUT MESSAGE "ANYTHING ELSE I CAN HELP WITH?"
-    #Add counter to count how many times "GOODBYE" is received
-    #second time you say "GOODBYE"
-    #put message "THANK YOU FOR CALLING!"
-    #end 
 
-store = gets.chomp
-if store.empty?
-    puts "HELLO, THIS IS A GROCERY STORE!"
-end 
-question = gets.chomp.to_s
+#check if info that held in variable named "question" contains all upper-case letters 
+ #if information is entered in all upper-case letters then
+    #Then print out with all upper-case letters "NO, THIS IS NOT A PET STORE"
 
-if question.downcase
-    puts "I AM HAVING A HARD TIME HEARING YOU."
-    elsif question.upcase
-    puts "NO, THIS IS NOT A PET STORE"
-    end
+#check if info that held in variable named "question" contains a word "GOODBYE"
+#if information is entered contains a word "GOODBYE"
+    #Then put message "ANYTHING ELSE I CAN HELP WITH?"
+#Create variable named goodbye and add number 1 to it aftrer client said "GOODBYE" for the first time
 
-question = gets.chomp
-if question == "GOODBYE"
+#Check if a word "GOODBYE" entered second time 
 
-        puts "ANYTHING ELSE I CAN HELP WITH?"
-end
-
-if question == "GOODBYE"
-    puts "THANK YOU FOR CALLING!"
-
-end
+#Check if info that held in variable named "question" contains a word "GOODBYE" and variable goodbye has number 1 in it.
+    #if both actions above are true
+    #then put message "THANK YOU FOR CALLING!"
+    #and end asking question
+ #and end the program
